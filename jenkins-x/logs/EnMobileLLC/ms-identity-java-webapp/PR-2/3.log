@@ -1,0 +1,187 @@
+
+Showing logs for build [32menmobilellc-ms-identity-java-we-btpx2-3[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-n6jxs[0m
+{"level":"warn","ts":1576530413.9475493,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1576530413.9483578,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32menmobilellc-ms-identity-java-we-btpx2-3[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-dz67m[0m
+{"level":"warn","ts":1576530414.8486104,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1576530414.890893,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32menmobilellc-ms-identity-java-we-btpx2-3[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32menmobilellc-ms-identity-java-we-btpx2-3[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-enmobilellc-ms-identity-java-we-ndvbp[0m
+{"level":"warn","ts":1576530424.8977532,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1576530425.3565161,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/EnMobileLLC/ms-identity-java-webapp.git @ master in path /workspace/source"}
+
+Showing logs for build [32menmobilellc-ms-identity-java-we-btpx2-3[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:47047c08360155031b0e48ce0e2fc1f0e3b5a1eb,2:78c1322c37113b6cbba16a2107701cd17a1bd12c
+DEBUG: ran git fetch --unshallow origin 78c1322c37113b6cbba16a2107701cd17a1bd12c: 47047c08360155031b0e48ce0e2fc1f0e3b5a1eb: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard 47047c08360155031b0e48ce0e2fc1f0e3b5a1eb in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge 78c1322c37113b6cbba16a2107701cd17a1bd12c in 
+Merged SHA 78c1322c37113b6cbba16a2107701cd17a1bd12c with commit message 'Slightly modified dockerfile' into base branch master
+
+Showing logs for build [32menmobilellc-ms-identity-java-we-btpx2-3[0m stage [32mfrom-build-pack[0m and container [32mstep-build-set-version[0m
+Picked up _JAVA_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dsun.zip.disableMemoryMapping=true -XX:+UseParallelGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Xms10m -Xmx192m
+OpenJDK 64-Bit Server VM warning: If the number of processors is expected to increase from one, then you should configure the number of parallel GC threads appropriately using -XX:ParallelGCThreads=N
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< com.microsoft.azure:msal-web-sample >-----------------
+[INFO] Building msal-web-sample 0.1.0
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- versions-maven-plugin:2.7:set (default-cli) @ msal-web-sample ---
+[INFO] Searching for local aggregator root...
+[INFO] Local aggregation root: /workspace/source
+[INFO] Processing change of com.microsoft.azure:msal-web-sample:0.1.0 -> 0.0.0-SNAPSHOT-PR-2-3
+[INFO] Processing com.microsoft.azure:msal-web-sample
+[INFO]     Updating project com.microsoft.azure:msal-web-sample
+[INFO]         from version 0.1.0 to 0.0.0-SNAPSHOT-PR-2-3
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  20.145 s
+[INFO] Finished at: 2019-12-16T21:07:31Z
+[INFO] ------------------------------------------------------------------------
+
+Showing logs for build [32menmobilellc-ms-identity-java-we-btpx2-3[0m stage [32mfrom-build-pack[0m and container [32mstep-build-mvn-install[0m
+Picked up _JAVA_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dsun.zip.disableMemoryMapping=true -XX:+UseParallelGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Xms10m -Xmx192m
+OpenJDK 64-Bit Server VM warning: If the number of processors is expected to increase from one, then you should configure the number of parallel GC threads appropriately using -XX:ParallelGCThreads=N
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< com.microsoft.azure:msal-web-sample >-----------------
+[INFO] Building msal-web-sample 0.0.0-SNAPSHOT-PR-2-3
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ msal-web-sample ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ msal-web-sample ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 10 source files to /workspace/source/target/classes
+[INFO] /workspace/source/src/main/java/com/microsoft/azure/msalwebsample/SessionManagementHelper.java: /workspace/source/src/main/java/com/microsoft/azure/msalwebsample/SessionManagementHelper.java uses unchecked or unsafe operations.
+[INFO] /workspace/source/src/main/java/com/microsoft/azure/msalwebsample/SessionManagementHelper.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ msal-web-sample ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /workspace/source/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ msal-web-sample ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M1:test (default-test) @ msal-web-sample ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-war-plugin:3.2.2:war (default-war) @ msal-web-sample ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [msal-web-sample] in [/workspace/source/target/msal-web-sample-0.0.0-SNAPSHOT-PR-2-3]
+[INFO] Processing war project
+[INFO] Webapp assembled in [292 msecs]
+[INFO] Building war: /workspace/source/target/msal-web-sample-0.0.0-SNAPSHOT-PR-2-3.war
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.1.4.RELEASE:repackage (repackage) @ msal-web-sample ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ msal-web-sample ---
+[INFO] Installing /workspace/source/target/msal-web-sample-0.0.0-SNAPSHOT-PR-2-3.war to /home/jenkins/.mvnrepository/com/microsoft/azure/msal-web-sample/0.0.0-SNAPSHOT-PR-2-3/msal-web-sample-0.0.0-SNAPSHOT-PR-2-3.war
+[INFO] Installing /workspace/source/pom.xml to /home/jenkins/.mvnrepository/com/microsoft/azure/msal-web-sample/0.0.0-SNAPSHOT-PR-2-3/msal-web-sample-0.0.0-SNAPSHOT-PR-2-3.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  31.328 s
+[INFO] Finished at: 2019-12-16T21:08:07Z
+[INFO] ------------------------------------------------------------------------
+
+Showing logs for build [32menmobilellc-ms-identity-java-we-btpx2-3[0m stage [32mfrom-build-pack[0m and container [32mstep-build-skaffold-version[0m
+v1.0.1
+
+Showing logs for build [32menmobilellc-ms-identity-java-we-btpx2-3[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+[36mINFO[0m[0000] Downloading base image openjdk:8-jdk-slim    
+[36mINFO[0m[0000] Error while retrieving image from cache: getting file info: stat /workspace/sha256:c97eb5f626198602270d17adebaf19b7ab1080db65263107efbb95efee3fefe0: no such file or directory 
+[36mINFO[0m[0000] Downloading base image openjdk:8-jdk-slim    
+[36mINFO[0m[0001] cmd: EXPOSE                                  
+[36mINFO[0m[0001] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0001] Using files from context: [/workspace/source/pom.xml] 
+[36mINFO[0m[0001] Using files from context: [/workspace/source/target/msal-web-sample-0.0.0-SNAPSHOT-PR-2-3.war] 
+[36mINFO[0m[0001] Skipping unpacking as no commands require it. 
+[36mINFO[0m[0001] Taking snapshot of full filesystem...        
+[36mINFO[0m[0001] ENV PORT 8080                                
+[36mINFO[0m[0001] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0001] ENV CLASSPATH /opt/lib                       
+[36mINFO[0m[0001] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0001] EXPOSE 8080                                  
+[36mINFO[0m[0001] cmd: EXPOSE                                  
+[36mINFO[0m[0001] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0001] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0001] Using files from context: [/workspace/source/pom.xml] 
+[36mINFO[0m[0001] COPY pom.xml target/lib* /opt/lib/           
+[36mINFO[0m[0001] Taking snapshot of files...                  
+[36mINFO[0m[0001] Using files from context: [/workspace/source/target/msal-web-sample-0.0.0-SNAPSHOT-PR-2-3.war] 
+[36mINFO[0m[0001] COPY target/*.war /opt/app.jar               
+[36mINFO[0m[0001] Taking snapshot of files...                  
+[36mINFO[0m[0001] WORKDIR /opt                                 
+[36mINFO[0m[0001] cmd: workdir                                 
+[36mINFO[0m[0001] Changed working directory to /opt            
+[36mINFO[0m[0001] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0001] CMD ["java", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap", "-jar", "app.jar"] 
+[36mINFO[0m[0001] No files changed in this command, skipping snapshotting. 
+2019/12/16 21:08:13 mounted blob: sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c
+2019/12/16 21:08:13 mounted blob: sha256:c5943b75c9747aebea25c3fc4bf3d4b4247101176b78ada93d08446dd33f94a0
+2019/12/16 21:08:13 mounted blob: sha256:2f1dc2bdcfe193ce54affa45170354ca76667c40f8cf536b6282dd379e17e24a
+2019/12/16 21:08:13 mounted blob: sha256:c2a806caa98c159f2c9254dabd60e04352b5c8b46d2e6cc9bd8f7bfc037a4e0b
+2019/12/16 21:08:14 pushed blob: sha256:31c029acd466eff7c3d6d6e8b2984b77d5f123346eaf3bf6aef8aac59ca9608f
+2019/12/16 21:08:14 pushed blob: sha256:483f0e6b541069ed94927b618ff6931452ab8c0830791ab9a9af1c97ba0ddae8
+2019/12/16 21:08:28 pushed blob: sha256:156e973d80bef7c2b78d91804ed6e815fe4b7aedb30ce037f207069e851d485a
+2019/12/16 21:08:28 index.docker.io/enmobilellc/ms-identity-java-webapp:0.0.0-SNAPSHOT-PR-2-3: digest: sha256:bfe10bbe337966e7f88dba84edbd0baa41661e5c2bb7399c0c5f31382c8190e9 size: 1244
+
+Showing logs for build [32menmobilellc-ms-identity-java-we-btpx2-3[0m stage [32mfrom-build-pack[0m and container [32mstep-postbuild-post-build[0m
+no CVE provider running in the current ** namespace so skip adding image to be analysed
+
+Showing logs for build [32menmobilellc-ms-identity-java-we-btpx2-3[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-make-preview[0m
+sed -i -e "s/version:.*/version: 0.0.0-SNAPSHOT-PR-2-3/" Chart.yaml
+sed -i -e "s/version:.*/version: 0.0.0-SNAPSHOT-PR-2-3/" ../*/Chart.yaml
+sed -i -e "s|repository:.*|repository: docker.io\/enmobilellc\/ms-identity-java-webapp|" values.yaml
+sed -i -e "s/tag:.*/tag: 0.0.0-SNAPSHOT-PR-2-3/" values.yaml
+echo "  version: 0.0.0-SNAPSHOT-PR-2-3" >> requirements.yaml
+** step helm build
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io
+Successfully added Helm repository chartmuseum.jenkins-x.io.
+
+Showing logs for build [32menmobilellc-ms-identity-java-we-btpx2-3[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-preview[0m
+Creating a preview
+Created environment enmobilellc-ms-identity-java-webapp-pr-2
+Namespace **-enmobilellc-ms-identity-java-webapp-pr-2 created 
+expose:
+  Annotations:
+    helm.sh/hook: post-install,post-upgrade
+    helm.sh/hook-delete-policy: hook-succeeded
+  config:
+    domain: 40.71.234.103.nip.io
+    exposer: Ingress
+    http: "true"
+preview:
+  image:
+    repository: docker.io/enmobilellc/ms-identity-java-webapp
+    tag: 0.0.0-SNAPSHOT-PR-2-3
+
+
+Updating PipelineActivities enmobilellc-ms-identity-java-webapp-pr-2-3 which has status Running
+WARNING: preview application http://ms-identity-java-webapp.**-enmobilellc-ms-identity-java-webapp-pr-2.40.71.234.103.nip.io not available, error was 503 503 Service Temporarily Unavailable, delaying for: 714.263872ms
+WARNING: preview application http://ms-identity-java-webapp.**-enmobilellc-ms-identity-java-webapp-pr-2.40.71.234.103.nip.io not available, error was 503 503 Service Temporarily Unavailable, delaying for: 1.453334767s
+WARNING: preview application http://ms-identity-java-webapp.**-enmobilellc-ms-identity-java-webapp-pr-2.40.71.234.103.nip.io not available, error was 503 503 Service Temporarily Unavailable, delaying for: 2.652940521s
+WARNING: preview application http://ms-identity-java-webapp.**-enmobilellc-ms-identity-java-webapp-pr-2.40.71.234.103.nip.io not available, error was 503 503 Service Temporarily Unavailable, delaying for: 2.905441032s
+WARNING: preview application http://ms-identity-java-webapp.**-enmobilellc-ms-identity-java-webapp-pr-2.40.71.234.103.nip.io not available, error was 503 503 Service Temporarily Unavailable, delaying for: 4.015140863s
+WARNING: preview application http://ms-identity-java-webapp.**-enmobilellc-ms-identity-java-webapp-pr-2.40.71.234.103.nip.io not available, error was 503 503 Service Temporarily Unavailable, delaying for: 5.365612089s
+WARNING: preview application http://ms-identity-java-webapp.**-enmobilellc-ms-identity-java-webapp-pr-2.40.71.234.103.nip.io not available, error was 503 503 Service Temporarily Unavailable, delaying for: 11.661953174s
+WARNING: preview application http://ms-identity-java-webapp.**-enmobilellc-ms-identity-java-webapp-pr-2.40.71.234.103.nip.io not available, error was 503 503 Service Temporarily Unavailable, delaying for: 18.918463065s
+Preview application is now available at: http://ms-identity-java-webapp.**-enmobilellc-ms-identity-java-webapp-pr-2.40.71.234.103.nip.io
