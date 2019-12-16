@@ -1,0 +1,134 @@
+
+Showing logs for build [32menmobilellc-ms-identity-java-we-ftgwx-2[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-bwk5h[0m
+{"level":"warn","ts":1576529805.69069,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1576529805.6917822,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32menmobilellc-ms-identity-java-we-ftgwx-2[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-t8rs4[0m
+{"level":"warn","ts":1576529806.9471803,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1576529806.987167,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32menmobilellc-ms-identity-java-we-ftgwx-2[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32menmobilellc-ms-identity-java-we-ftgwx-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-enmobilellc-ms-identity-java-we-xnr7d[0m
+{"level":"warn","ts":1576529815.0416949,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1576529815.4880254,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/EnMobileLLC/ms-identity-java-webapp.git @ master in path /workspace/source"}
+
+Showing logs for build [32menmobilellc-ms-identity-java-we-ftgwx-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:47047c08360155031b0e48ce0e2fc1f0e3b5a1eb,2:78c1322c37113b6cbba16a2107701cd17a1bd12c
+DEBUG: ran git fetch --unshallow origin 78c1322c37113b6cbba16a2107701cd17a1bd12c: 47047c08360155031b0e48ce0e2fc1f0e3b5a1eb: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard 47047c08360155031b0e48ce0e2fc1f0e3b5a1eb in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge 78c1322c37113b6cbba16a2107701cd17a1bd12c in 
+Merged SHA 78c1322c37113b6cbba16a2107701cd17a1bd12c with commit message 'Slightly modified dockerfile' into base branch master
+
+Showing logs for build [32menmobilellc-ms-identity-java-we-ftgwx-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-set-version[0m
+Picked up _JAVA_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dsun.zip.disableMemoryMapping=true -XX:+UseParallelGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Xms10m -Xmx192m
+OpenJDK 64-Bit Server VM warning: If the number of processors is expected to increase from one, then you should configure the number of parallel GC threads appropriately using -XX:ParallelGCThreads=N
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< com.microsoft.azure:msal-web-sample >-----------------
+[INFO] Building msal-web-sample 0.1.0
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- versions-maven-plugin:2.7:set (default-cli) @ msal-web-sample ---
+[INFO] Searching for local aggregator root...
+[INFO] Local aggregation root: /workspace/source
+[INFO] Processing change of com.microsoft.azure:msal-web-sample:0.1.0 -> 0.0.0-SNAPSHOT-PR-2-2
+[INFO] Processing com.microsoft.azure:msal-web-sample
+[INFO]     Updating project com.microsoft.azure:msal-web-sample
+[INFO]         from version 0.1.0 to 0.0.0-SNAPSHOT-PR-2-2
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  26.272 s
+[INFO] Finished at: 2019-12-16T20:57:26Z
+[INFO] ------------------------------------------------------------------------
+
+Showing logs for build [32menmobilellc-ms-identity-java-we-ftgwx-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-mvn-install[0m
+Picked up _JAVA_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dsun.zip.disableMemoryMapping=true -XX:+UseParallelGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Xms10m -Xmx192m
+OpenJDK 64-Bit Server VM warning: If the number of processors is expected to increase from one, then you should configure the number of parallel GC threads appropriately using -XX:ParallelGCThreads=N
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< com.microsoft.azure:msal-web-sample >-----------------
+[INFO] Building msal-web-sample 0.0.0-SNAPSHOT-PR-2-2
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ msal-web-sample ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ msal-web-sample ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 10 source files to /workspace/source/target/classes
+[INFO] /workspace/source/src/main/java/com/microsoft/azure/msalwebsample/SessionManagementHelper.java: /workspace/source/src/main/java/com/microsoft/azure/msalwebsample/SessionManagementHelper.java uses unchecked or unsafe operations.
+[INFO] /workspace/source/src/main/java/com/microsoft/azure/msalwebsample/SessionManagementHelper.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ msal-web-sample ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /workspace/source/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ msal-web-sample ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M1:test (default-test) @ msal-web-sample ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-war-plugin:3.2.2:war (default-war) @ msal-web-sample ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [msal-web-sample] in [/workspace/source/target/msal-web-sample-0.0.0-SNAPSHOT-PR-2-2]
+[INFO] Processing war project
+[INFO] Webapp assembled in [322 msecs]
+[INFO] Building war: /workspace/source/target/msal-web-sample-0.0.0-SNAPSHOT-PR-2-2.war
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.1.4.RELEASE:repackage (repackage) @ msal-web-sample ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ msal-web-sample ---
+[INFO] Installing /workspace/source/target/msal-web-sample-0.0.0-SNAPSHOT-PR-2-2.war to /home/jenkins/.mvnrepository/com/microsoft/azure/msal-web-sample/0.0.0-SNAPSHOT-PR-2-2/msal-web-sample-0.0.0-SNAPSHOT-PR-2-2.war
+[INFO] Installing /workspace/source/pom.xml to /home/jenkins/.mvnrepository/com/microsoft/azure/msal-web-sample/0.0.0-SNAPSHOT-PR-2-2/msal-web-sample-0.0.0-SNAPSHOT-PR-2-2.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  29.376 s
+[INFO] Finished at: 2019-12-16T20:58:00Z
+[INFO] ------------------------------------------------------------------------
+
+Showing logs for build [32menmobilellc-ms-identity-java-we-ftgwx-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-skaffold-version[0m
+v1.0.1
+
+Showing logs for build [32menmobilellc-ms-identity-java-we-ftgwx-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+[36mINFO[0m[0000] Downloading base image openjdk:8-jdk-slim    
+[36mINFO[0m[0000] Error while retrieving image from cache: getting file info: stat /workspace/sha256:c97eb5f626198602270d17adebaf19b7ab1080db65263107efbb95efee3fefe0: no such file or directory 
+[36mINFO[0m[0000] Downloading base image openjdk:8-jdk-slim    
+[36mINFO[0m[0000] cmd: EXPOSE                                  
+[36mINFO[0m[0000] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0000] Using files from context: [/workspace/source/pom.xml] 
+[36mINFO[0m[0000] Using files from context: [/workspace/source/target/msal-web-sample-0.0.0-SNAPSHOT-PR-2-2.war] 
+[36mINFO[0m[0000] Skipping unpacking as no commands require it. 
+[36mINFO[0m[0000] Taking snapshot of full filesystem...        
+[36mINFO[0m[0000] ENV PORT 8080                                
+[36mINFO[0m[0000] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0000] ENV CLASSPATH /opt/lib                       
+[36mINFO[0m[0000] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0000] EXPOSE 8080                                  
+[36mINFO[0m[0000] cmd: EXPOSE                                  
+[36mINFO[0m[0000] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0000] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0000] Using files from context: [/workspace/source/pom.xml] 
+[36mINFO[0m[0000] COPY pom.xml target/lib* /opt/lib/           
+[36mINFO[0m[0000] Taking snapshot of files...                  
+[36mINFO[0m[0000] Using files from context: [/workspace/source/target/msal-web-sample-0.0.0-SNAPSHOT-PR-2-2.war] 
+[36mINFO[0m[0000] COPY target/*.war /opt/app.jar               
+[36mINFO[0m[0000] Taking snapshot of files...                  
+[36mINFO[0m[0001] WORKDIR /opt                                 
+[36mINFO[0m[0001] cmd: workdir                                 
+[36mINFO[0m[0001] Changed working directory to /opt            
+[36mINFO[0m[0001] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0001] CMD ["java", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap", "-jar", "app.jar"] 
+[36mINFO[0m[0001] No files changed in this command, skipping snapshotting. 
+error pushing image: failed to push to destination index.docker.io/enmobilellc/ms-identity-java-webapp:0.0.0-SNAPSHOT-PR-2-2: unsupported status code 401; body: 
+[31m
+Pipeline failed on stage 'from-build-pack' : container 'step-build-container-build'. The execution of the pipeline has stopped.[0m
