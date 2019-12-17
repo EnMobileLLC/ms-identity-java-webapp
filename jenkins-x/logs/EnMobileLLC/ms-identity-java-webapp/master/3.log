@@ -1,0 +1,156 @@
+
+Showing logs for build [32menmobilellc-ms-identity-java-we-n8m8f-3[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-6pj6c[0m
+{"level":"warn","ts":1576544246.1867285,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1576544246.1873229,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32menmobilellc-ms-identity-java-we-n8m8f-3[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-5qz9g[0m
+{"level":"warn","ts":1576544247.0280926,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1576544247.0333416,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32menmobilellc-ms-identity-java-we-n8m8f-3[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32menmobilellc-ms-identity-java-we-n8m8f-3[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-enmobilellc-ms-identity-java-we-5bfjt[0m
+{"level":"warn","ts":1576544262.0978858,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1576544262.4004169,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/EnMobileLLC/ms-identity-java-webapp.git @ v101441.0.4 in path /workspace/source"}
+
+Showing logs for build [32menmobilellc-ms-identity-java-we-n8m8f-3[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:29e15ebde808e5aa45775c05e54b0add39631661
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32menmobilellc-ms-identity-java-we-n8m8f-3[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /workspace/xdg_config/git/credentials
+
+Showing logs for build [32menmobilellc-ms-identity-java-we-n8m8f-3[0m stage [32mfrom-build-pack[0m and container [32mstep-build-mvn-deploy[0m
+Picked up _JAVA_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dsun.zip.disableMemoryMapping=true -XX:+UseParallelGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Xms10m -Xmx192m
+OpenJDK 64-Bit Server VM warning: If the number of processors is expected to increase from one, then you should configure the number of parallel GC threads appropriately using -XX:ParallelGCThreads=N
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< com.microsoft.azure:msal-web-sample >-----------------
+[INFO] Building msal-web-sample 101441.0.4
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ msal-web-sample ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ msal-web-sample ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ msal-web-sample ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 10 source files to /workspace/source/target/classes
+[INFO] /workspace/source/src/main/java/com/microsoft/azure/msalwebsample/SessionManagementHelper.java: /workspace/source/src/main/java/com/microsoft/azure/msalwebsample/SessionManagementHelper.java uses unchecked or unsafe operations.
+[INFO] /workspace/source/src/main/java/com/microsoft/azure/msalwebsample/SessionManagementHelper.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ msal-web-sample ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /workspace/source/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ msal-web-sample ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M1:test (default-test) @ msal-web-sample ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-war-plugin:3.2.2:war (default-war) @ msal-web-sample ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [msal-web-sample] in [/workspace/source/target/msal-web-sample-101441.0.4]
+[INFO] Processing war project
+[INFO] Webapp assembled in [208 msecs]
+[INFO] Building war: /workspace/source/target/msal-web-sample-101441.0.4.war
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.1.4.RELEASE:repackage (repackage) @ msal-web-sample ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ msal-web-sample ---
+[INFO] Installing /workspace/source/target/msal-web-sample-101441.0.4.war to /home/jenkins/.mvnrepository/com/microsoft/azure/msal-web-sample/101441.0.4/msal-web-sample-101441.0.4.war
+[INFO] Installing /workspace/source/pom.xml to /home/jenkins/.mvnrepository/com/microsoft/azure/msal-web-sample/101441.0.4/msal-web-sample-101441.0.4.pom
+[INFO] 
+[INFO] --- maven-deploy-plugin:2.8.2:deploy (default-deploy) @ msal-web-sample ---
+[INFO] Using alternate deployment repository local-nexus::default::http://nexus/repository/maven-releases/
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  30.129 s
+[INFO] Finished at: 2019-12-17T00:58:17Z
+[INFO] ------------------------------------------------------------------------
+
+Showing logs for build [32menmobilellc-ms-identity-java-we-n8m8f-3[0m stage [32mfrom-build-pack[0m and container [32mstep-build-skaffold-version[0m
+v1.0.1
+
+Showing logs for build [32menmobilellc-ms-identity-java-we-n8m8f-3[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+[36mINFO[0m[0000] Downloading base image openjdk:8-jdk-slim    
+2019/12/17 00:58:20 Unable to parse "/home/jenkins/.docker/config.json": invalid character 'Z' after object key:value pair
+[36mINFO[0m[0000] Error while retrieving image from cache: getting file info: stat /workspace/sha256:c97eb5f626198602270d17adebaf19b7ab1080db65263107efbb95efee3fefe0: no such file or directory 
+[36mINFO[0m[0000] Downloading base image openjdk:8-jdk-slim    
+2019/12/17 00:58:20 Unable to parse "/home/jenkins/.docker/config.json": invalid character 'Z' after object key:value pair
+[36mINFO[0m[0000] cmd: EXPOSE                                  
+[36mINFO[0m[0000] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0000] Using files from context: [/workspace/source/pom.xml] 
+[36mINFO[0m[0000] Using files from context: [/workspace/source/target/msal-web-sample-101441.0.4.war] 
+[36mINFO[0m[0000] Skipping unpacking as no commands require it. 
+[36mINFO[0m[0000] Taking snapshot of full filesystem...        
+[36mINFO[0m[0001] ENV PORT 8080                                
+[36mINFO[0m[0001] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0001] ENV CLASSPATH /opt/lib                       
+[36mINFO[0m[0001] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0001] EXPOSE 8080                                  
+[36mINFO[0m[0001] cmd: EXPOSE                                  
+[36mINFO[0m[0001] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0001] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0001] Using files from context: [/workspace/source/pom.xml] 
+[36mINFO[0m[0001] COPY pom.xml target/lib* /opt/lib/           
+[36mINFO[0m[0001] Taking snapshot of files...                  
+[36mINFO[0m[0001] Using files from context: [/workspace/source/target/msal-web-sample-101441.0.4.war] 
+[36mINFO[0m[0001] COPY target/*.war /opt/app.jar               
+[36mINFO[0m[0001] Taking snapshot of files...                  
+[36mINFO[0m[0002] WORKDIR /opt                                 
+[36mINFO[0m[0002] cmd: workdir                                 
+[36mINFO[0m[0002] Changed working directory to /opt            
+[36mINFO[0m[0002] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0002] CMD ["java", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap", "-jar", "app.jar"] 
+[36mINFO[0m[0002] No files changed in this command, skipping snapshotting. 
+2019/12/17 00:58:22 Unable to parse "/home/jenkins/.docker/config.json": invalid character 'Z' after object key:value pair
+2019/12/17 00:58:23 existing blob: sha256:c2a806caa98c159f2c9254dabd60e04352b5c8b46d2e6cc9bd8f7bfc037a4e0b
+2019/12/17 00:58:23 existing blob: sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c
+2019/12/17 00:58:23 existing blob: sha256:c5943b75c9747aebea25c3fc4bf3d4b4247101176b78ada93d08446dd33f94a0
+2019/12/17 00:58:23 existing blob: sha256:2f1dc2bdcfe193ce54affa45170354ca76667c40f8cf536b6282dd379e17e24a
+2019/12/17 00:58:24 pushed blob: sha256:87760782ef3cb7e2f55381a196a44c4b9634bb2c4829655193478a396a1f13aa
+2019/12/17 00:58:25 pushed blob: sha256:66b8ada3459bc2ea88c616a90d5dff588696d8ed7be303065e84b80483aacad3
+2019/12/17 00:58:25 pushed blob: sha256:7f078e596a52fb6598e3ae251b6157f5f1a6b11cabb8e4bbc6abd38729a21d7b
+2019/12/17 00:58:25 index.docker.io/enmobilellc/ms-identity-java-webapp:101441.0.4: digest: sha256:693afe6b7bba382141382b77203bef69e16cf4da03f3d8adb952fe0873dc7886 size: 1244
+
+Showing logs for build [32menmobilellc-ms-identity-java-we-n8m8f-3[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-build[0m
+no CVE provider running in the current ** namespace so skip adding image to be analysed
+
+Showing logs for build [32menmobilellc-ms-identity-java-we-n8m8f-3[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
+Converted /workspace/source/charts/ms-identity-java-webapp to an unshallow repository
+Generating change log from git ref a402a7801b0f141af78f868f6b814adcad51ca64 => f0579e5fa21f247ef9adb595fc5dfe09c586d70c
+WARNING: No release found for EnMobileLLC/ms-identity-java-webapp and tag v101441.0.4 so creating a new release
+Updated the release information at https://github.com/EnMobileLLC/ms-identity-java-webapp/releases/tag/v101441.0.4
+generated: /workspace/source/charts/ms-identity-java-webapp/templates/release.yaml
+Created Release ms-identity-java-webapp-101441-0-4 resource in namespace **
+Updating PipelineActivity enmobilellc-ms-identity-java-webapp-master-3 with version 101441.0.4
+Updated PipelineActivities enmobilellc-ms-identity-java-webapp-master-3 with release notes URL: https://github.com/EnMobileLLC/ms-identity-java-webapp/releases/tag/v101441.0.4
+
+Showing logs for build [32menmobilellc-ms-identity-java-we-n8m8f-3[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-helm-release[0m
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Uploading chart file ms-identity-java-webapp-101441.0.4.tgz to http://jenkins-x-chartmuseum:8080/api/charts
+Received 201 response: {"saved":true}
+
+Showing logs for build [32menmobilellc-ms-identity-java-we-n8m8f-3[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-promote[0m
+WARNING: prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/**/issues/2410
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Promoting app ms-identity-java-webapp version 101441.0.4 to namespace **-staging
+Created Pull Request: https://github.com/EnMobileLLC/environment-darwinpulse-staging/pull/2
+Added label updatebot to Pull Request https://github.com/EnMobileLLC/environment-darwinpulse-staging/pull/2
+WARNING: Failed to query the Pull Request last commit status for https://github.com/EnMobileLLC/environment-darwinpulse-staging/pull/2 ref 3d57256e72b694a1557600183db84769f94dbe29 Could not find a status for repository enmobilellc/environment-darwinpulse-staging with ref 3d57256e72b694a1557600183db84769f94dbe29
+WARNING: Failed to query the Pull Request last commit status for https://github.com/EnMobileLLC/environment-darwinpulse-staging/pull/2 ref 3d57256e72b694a1557600183db84769f94dbe29 Could not find a status for repository enmobilellc/environment-darwinpulse-staging with ref 3d57256e72b694a1557600183db84769f94dbe29
+Pull Request https://github.com/EnMobileLLC/environment-darwinpulse-staging/pull/2 is merged at sha a70ce9c366de54b3abe1a2ccdb89763ca4047af9
+Pull Request merged but we are not waiting for the update pipeline to complete!
+WARNING: Could not find the service URL in namespace **-staging for names ms-identity-java-webapp, **-ms-identity-java-webapp, **-staging-ms-identity-java-webapp
